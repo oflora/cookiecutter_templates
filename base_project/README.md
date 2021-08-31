@@ -1,15 +1,4 @@
-# Cookiecutter R and Python template 
-
-Personal project structure template for general projects. As it includes more folder than needed for most projects you can run the next commands to clean the folder.
-
-``` bash
-find . -type d -empty -exec rmdir {} \;
-```
-If any directory is left empty after running the previous command, use the -delete option, which will repeatedly delete all empty directories till the top-level directory.
-
-``` bash
-find . find . -type d -empty -exec -delete
-```
+# Base project template
 
 ## Directory structure
 
@@ -21,29 +10,20 @@ find . find . -type d -empty -exec -delete
 │   └── raw               <- Original field/lab data dump.
 ├── docs
 │   ├── documentation     <- Project documentation. Includes data dictionary, workflow description, etc.
-│   ├── figs              <- General purpose images. Includes downloaded images.
-│   ├── notes             <- Notes written during project development. Includes theory.
-│   └── references        <- References employed in the project.
+│   ├── figs              <- General purpose images. Includes downloaded images and photos.
+│   ├── notes             <- Notes written during project development. Includes theory and general ideas.
+│   ├── references        <- Bibliographic references.
+│   └── bibliography.bib
 ├── notebooks
 │   ├── explore           <- Exploration notebooks.
-│   └── reports           <- Notebooks for generating reports.
-├── reports
+│   └── reports           <- Notebooks employed in report generation.
+├── results
 │   ├── figures           <- Generated graphics and figures to be used in reporting.
-│   ├── html              <- Generated analysis as html.
-│   └── pdfs              <- Generated analysis as pdf.
+│   ├── models            <- Generated models.
+│   ├── outputs           <- Generated data and databases.
+│   └── reports           <- Generated reports. 
 ├── src
 │   ├── python                  <- Python function definitions.
 │   ├── R                       <- R function definitions.
-│   ├── scripts                 <- Executed scripts.
-│   │   ├── analysis                <- Analyisis and model fitting scripts.
-│   │   ├── data                    <- Scripts for downloading/extracting data.
-│   │   ├── processing              <- Scripts to turn raw data to clean and useful data.
-│   │   └── visualization           <- Scripts to create graphics and figures.
-│   ├── sql                     <- SQL scripts for managing databases.
-│   └── test_units              <- Test units for functions/scripts.
-├── Makefile
-├── py_requirements.txt
-├── README.md
-└── R_requirements.txt
+└── README.Rmd
 ```
- 
